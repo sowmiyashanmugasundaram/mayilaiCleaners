@@ -234,7 +234,7 @@ body {
   font-weight: bold;
 }
 
-.estimate-form {
+.contactForm{
   flex: 1;
   background: #fff;
   border-radius: 10px;
@@ -242,7 +242,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.estimate-form form {
+.contactForm form {
   display: flex;
   flex-direction: column;
 }
@@ -314,6 +314,12 @@ button:hover {
 }
 
 /* Main Container */
+.about{
+  margin: 0 auto;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -386,20 +392,25 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 footer .social-icons {
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size: 25px;
+  margin: auto 0;
 }
 
 footer .social-icons a {
   margin: 0 15px;
   color: white;
   transition: color 0.3s;
+  
 }
-
+footer .social-icons img {
+height: 30px;
+width: 35px;
+border-radius: 50%;
+}
 footer .social-icons a:hover {
   color: #ff7e5f; /* Change color on hover */
 }
@@ -418,12 +429,12 @@ footer .social-icons a:hover {
       text-align: center;
   }
 
-  .estimate-content, .estimate-form {
+  .estimate-content, .contactForm {
       width: 100%;
       margin-top: 20px;
   }
 
-  .estimate-form {
+  .contactForm{
       margin-top: 30px;
   }
 }
@@ -467,6 +478,15 @@ footer .social-icons a:hover {
       margin-bottom: 10px;
   }
 }
+
+.servicesh1{
+  
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+  }
+
 
 /* Ensure the service section is styled well */
 .service-section {
