@@ -414,70 +414,7 @@ border-radius: 50%;
 footer .social-icons a:hover {
   color: #ff7e5f; /* Change color on hover */
 }
-/* Responsive Footer */
-@media (max-width: 768px) {
-  footer a {
-      display: block;
-      margin: 5px 0;
-  }
-}
 
-/* Responsive Estimate Section */
-@media (max-width: 768px) {
-  .estimate-section {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .estimate-content, .contactForm {
-      width: 100%;
-      margin-top: 20px;
-  }
-
-  .contactForm{
-      margin-top: 30px;
-  }
-}
-
-/* Responsive Services Section */
-@media (max-width: 768px) {
-  .services {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .service-item {
-      width: 80%;
-      margin-bottom: 20px;
-  }
-}
-
-/* Responsive Hero Section */
-@media (max-width: 768px) {
-  .hero {
-      height: 300px;
-      font-size: 1.5rem;
-  }
-}
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  .navbar-nav {
-      float: none;
-      text-align: center;
-  }
-
-  .navbar-nav li {
-      display: block;
-      margin: 5px 0;
-  }
-
-  .logo-container {
-      position: static;
-      text-align: center;
-      margin-bottom: 10px;
-  }
-}
 
 .servicesh1{
   
@@ -566,4 +503,108 @@ footer .social-icons a:hover {
 
 .swiper-pagination-bullet-active {
   background-color: #ff4081; /* Active pagination bullet color */
+}
+
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  #menu {
+      height: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .logo-container {
+      position: static;
+      margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+  }
+
+  .navbar-nav li {
+      display: block;
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .navbar-nav li a {
+      font-size: 1rem;
+      padding: 10px;
+      display: block;
+      width: 100%;
+  }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero {
+      height: 300px;
+      padding: 50px;
+      font-size: 1.5rem;
+  }
+
+  .hero h1 {
+      font-size: 2.5rem;
+      text-align: center;
+  }
+
+  .hero p {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}
+
+/* Responsive Background Images */
+@media (max-width: 768px) {
+  .hero-section {
+      background-size: cover;
+      background-position: center;
+  }
+
+  .home {
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+/* Responsive Services Section */
+@media (max-width: 768px) {
+  .services {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-item {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+      text-align: center;
+      padding: 20px;
+  }
+
+  footer a {
+      display: block;
+      margin: 5px 0;
+  }
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+  .logo {
+      height: auto;
+      width: 80%;
+  }
 }
