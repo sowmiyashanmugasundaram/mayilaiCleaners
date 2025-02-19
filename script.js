@@ -1,36 +1,43 @@
- document.addEventListener("DOMContentLoaded", function () {
-    // Debugging Swiper Navigation Buttons
-    console.log(document.querySelector(".swiper-button-next")); // Should not be null
-    console.log(document.querySelector(".swiper-button-prev")); // Should not be null
-
-    // Initialize Swiper
-    var swiper = new Swiper(".mySwiper", {
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper Slider
+    const swiper = new Swiper('.mySwiper', {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 }
-        }
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
     });
 
-    // Contact Form Validation
-    document.getElementById("estimateForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form submission
-        let firstName = document.getElementById("firstName").value.trim();
-        let email = document.getElementById("email").value.trim();
-        let phone = document.getElementById("phone").value.trim();
-        let message = document.getElementById("message").value.trim();
+    // Debugging Swiper Navigation Buttons
+    const nextButton = document.querySelector(".swiper-button-next");
+    const prevButton = document.querySelector(".swiper-button-prev");
+    console.log("Next Button:", nextButton); // Should not be null
+    console.log("Previous Button:", prevButton); // Should not be null
 
+    // Contact Form Validation
+    const estimateForm = document.getElementById("estimateForm");
+    estimateForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        const firstName = document.getElementById("firstName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Validation checks
         if (firstName === "") {
             alert("First name is required.");
             return;
@@ -49,6 +56,6 @@
         }
 
         alert("Form submitted successfully!");
-        this.submit(); // Submit the form if everything is valid
+        estimateForm.submit(); // Submit the form if everything is valid
     });
 });
