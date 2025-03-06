@@ -1,0 +1,147 @@
+ .bg-dark {
+        background-color: rgba(0, 0, 0, .2) !important
+    }
+
+    .navbar-nav li a {
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        align-items: center;
+        font-weight: 700;
+        padding: 15px 20px;
+        text-decoration: none;
+        transition: all .3sease-in-out;
+        width: 120px;
+        text-align: center;
+        margin: 5px
+    }
+
+    .navbar-nav li a:hover {
+        color: #f39c12 !important;
+        background-color: rgba(255, 255, 255, .1)
+    }
+
+    .navbar-nav li.active a {
+        color: #f39c12 !important;
+        background-color: rgba(255, 255, 255, .1)
+    }
+    .aboutus{padding: 100px 0px 0px 0px;}
+    .aboutus h2{text-align: center;}
+    .aboutus h3{text-align:center;}
+    .servicessec {
+        padding: 100px 0
+    }
+
+    .servicessec h3 {
+        text-align: center;
+        padding-bottom: 30px;
+        color: #333;
+        font-weight: 700
+    }
+
+    .servicessec .card {
+        margin-bottom: 20px
+    }
+
+    .estimatesec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        background-image: url(../photos/back.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 80%;
+        color: #fff
+        
+        
+    }
+
+    .estimate-content {
+        flex: 1;
+        padding: 40px;
+        margin: 20px;
+        background-color: rgba(13, 68, 186, .3)
+    }
+
+    .contact-info span {
+        color: #ffc107;
+        font-weight: 700
+    }
+
+    .contact-us{padding: 60px 0px;}
+    
+    .contact-us button{
+        background-color: #f39c12 ; 
+        color: #fff;
+        font-weight: bold;
+        border: 1px solid #fff;
+    }
+   
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0
+    }
+
+   /* .formsec{ background-color: #fff;} */
+
+    .footer h5 {
+        padding-bottom: 20px
+    }
+
+    .list-group li {
+        list-style: none;
+        background: 0 0;
+        border: none;
+        text-align: left
+    }
+
+    .list-group a {
+        color: #fff;
+        font-size: 14px;
+    }
+    footer i:hover {
+        border: 1px solid #fff;
+    }
+
+    .list-group-item {
+        padding: 5px 7px
+    }
+
+    footer i {
+      
+        font-size: 25px !important;
+        padding: 10px;
+    }
+    .fb{color: #1877F2;}
+    .insta{color:#833AB4;}
+
+    .copyrights {
+        padding-top: 50px;
+        font-size: 12px
+    }
+
+    .estimate{
+        background: (0, 0, 255, 0.2); 
+        border: 2px solid blue;
+        padding: 20px;
+        gap: 10px;
+
+    }
+
+    .thank-card{
+        text-align: center;
+        padding: 150px 0px ;
+
+    }
+    .thank-card h1{
+        color: green;
+    }
+
+    .thank-card p{
+        font-size: large;
+    }
+    
